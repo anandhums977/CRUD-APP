@@ -1,1 +1,8 @@
-<p>single-post works!</p>
+<main>
+    <div class="jumbotron">
+        <div *ngIf="postDetails">
+            <h1 class="display-4">{{postDetails.title}}</h1>
+            <p class="lead">{{postDetails.body}}</p>
+        </div>
+    </div>
+</main>

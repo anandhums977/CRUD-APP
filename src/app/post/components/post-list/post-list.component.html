@@ -1,1 +1,10 @@
-<p>post-list works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let post of posts">
+            <app-post-card [postDetails]="post"></app-post-card>
+        </div>
+
+    </div>
+    <app-pagination [currentPage]="currentPage" [totalPages]="totalPages"
+        (pageChanged)="onPageChange($event)"></app-pagination>
+</div>

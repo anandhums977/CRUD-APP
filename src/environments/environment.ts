@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://crudcrud.com/api/ed722b04f25f434180c31e18b5f91f5b/'
+  apiUrl: 'https://postjunction.netlify.app/.netlify/functions/api/post'
 };
 
 /*

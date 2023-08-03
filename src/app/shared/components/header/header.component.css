@@ -1,12 +1,12 @@
 .active {
-  background: slateblue;
-  color: #fff;
+  /* background: slateblue; */
+  /* color: #fff;
   border-radius: 5px;
   padding: 8px;
   list-style: none;
-  text-decoration: none;
-}
+  /* text-decoration: none; */
+ } 
 
-a {
+/* a {
   color: #000 !important;
-}
+}  */

@@ -1,0 +1,17 @@
+.card-icon {
+    font-size: 48px;
+    /* border-radius: 50%; */
+    background-color: #f0f0f0;
+    padding: 15px;
+  }
+
+  /* Custom CSS in a style tag or a separate CSS file */
+a {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .card-title{
+    color: #4b5df7;
+  }

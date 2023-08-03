@@ -1,1 +1,38 @@
-<p>add-post works!</p>
+<div class="container mt-5 ">
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <h2> {{ isUpdate ? 'Update Post' : 'Add Post' }} Detail</h2>
+            <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" id="title" formControlName="title" required>
+                  <div *ngIf="postForm.controls['title'].invalid && postForm.controls['title'].touched"
+                       class="text-danger">Title is required</div>
+                </div>
+                <div class="form-group">
+                  <label for="body">Body</label>
+                  <textarea class="form-control" id="body" formControlName="body" rows="5" required></textarea>
+                  <div *ngIf="postForm.controls['body'].invalid && postForm.controls['body'].touched"
+                       class="text-danger">Body is required</div>
+                </div>
+                <div class="form-group">
+                  <label for="userId">User ID</label>
+                  <input type="number" class="form-control" id="userId" formControlName="userId" required>
+                  <div *ngIf="postForm.controls['userId'].invalid && postForm.controls['userId'].touched"
+                       class="text-danger">User ID is required</div>
+                </div>
+                <div class="form-group">
+                  <label for="tags">Tags</label>
+                  <input type="text" class="form-control" id="tags" formControlName="tags">
+                </div>
+                <div class="form-group">
+                  <label for="reactions">Reactions</label>
+                  <input type="number" class="form-control" id="reactions" formControlName="reactions" required>
+                  <div *ngIf="postForm.controls['reactions'].invalid && postForm.controls['reactions'].touched"
+                       class="text-danger">Reactions is required</div>
+                </div>
+                <button type="submit" class="btn {{ isUpdate ? 'btn-success' : 'btn-primary' }}" > {{ isUpdate ? 'Update Post' : 'Add Post' }}</button>
+              </form>
+        </div>
+    </div>
+</div>
