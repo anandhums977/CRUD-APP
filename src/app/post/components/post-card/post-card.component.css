@@ -1,17 +1,28 @@
 .card-icon {
-    font-size: 48px;
-    /* border-radius: 50%; */
-    background-color: #f0f0f0;
-    padding: 15px;
-  }
+  font-size: 48px;
+  background-color: #f0f0f0;
+  padding: 15px;
+}
 
-  /* Custom CSS in a style tag or a separate CSS file */
+:host {
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 10px;
+}
+
+:host:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom CSS in a style tag or a separate CSS file */
 a {
-    cursor: pointer;
-    color: #007bff;
-    text-decoration: underline;
-  }
-  
-  .card-title{
-    color: #4b5df7;
-  }
+  cursor: pointer;
+  text-decoration: none;
+  color: black !important;
+}
+
+.card-title {
+  color: #000 !important;
+}
